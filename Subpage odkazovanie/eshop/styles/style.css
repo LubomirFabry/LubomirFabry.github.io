@@ -1,0 +1,389 @@
+:root{
+    --red: rgb(0, 159, 183);
+}
+
+
+@font-face {
+    font-family: fontuz;
+    src: url(../fonts/PPPierSans-Bold.ttf);
+}
+  
+h2 {
+    font-family: fontuz;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+    background:#E6E6EA
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #444;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background:rgb(143, 0, 0);
+}
+.btn2{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #009FB7;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: fontuz;
+}
+.btn2:hover{
+    background:#005866;
+}
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #333;
+    padding: 2rem 9%; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#F4F4F8;
+    font-weight: default;
+    font-family: fontuz;
+}
+header .logo span{
+    color:var(--red);
+    font-family: fontuz;
+}
+
+.navbar > a {
+    font-family: fontuz;
+    text-transform: uppercase;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #F4F4F8;
+}
+header .navbar a:hover{
+    color:var(--red)
+}
+header .icons a{
+    font-size: 2.5rem;
+    color: #F4F4F8;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color:var(--red)
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(../images/stiahnuť.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 40rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    color: #fff;
+    font-family: fontuz;
+}
+
+.products .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    position: relative;
+    justify-content:space-around;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+.group{
+    justify-content: space-around;
+}
+.heading{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    position: relative;
+    font-size: 3.5rem;
+    display: block;
+    justify-content: space-around;
+    font-family: fontuz;
+    background: #E6E6EA;
+}
+.heading2{
+    color: #E6E6EA;
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    position: relative;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #444;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-family: fontuz;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.cart-btn:hover{
+    background:#888;
+}
+
+.box .content > h3{
+    font-size: 1.5rem;
+}
+.box .price{
+    font-size: 1.5rem;
+}
+
+.main{
+    width: 100%;
+    height:110vh ;
+    display: flex;
+    text-align: center;
+    padding-top: 7.5rem;
+}
+
+.menu{
+    width: 15%;
+    background: #73C3D1;
+    height:100vh;
+}
+
+.menu a{
+
+    text-decoration: none;
+    color: #222;
+    font-size: 2.5rem;
+    font-family: fontuz;
+    text-transform: uppercase;
+    display: list-item;
+    padding: 1rem;
+    
+}
+
+
+.menu a:hover{
+    background-color: var(--red);
+}
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: #333;
+    padding: 70px 0;
+}
+.content2{
+    max-width: 1170px;
+    
+    margin: auto;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    margin-left: 25px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color:#fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #73C3D1;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+
+  
+
+  /* Product Description */
+  .product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+
+  }
+  .product-description span {
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .product-description h1 {
+    font-weight: 300;
+    font-size: 40px;
+    color: #43484D;
+    letter-spacing: -2px;
+    font-family: fontuz;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+    margin-right: 70px;
+}
+
+
+  .container3{
+      display: flex;
+  }
+
+
+  .left-column {
+    width: 40%;
+    position: relative;
+  }
+   
+  .right-column {
+    width: 60%;
+    margin-top: 160px;
+    margin-left: 100px;
+  }
+
+.left-column img {
+    width: 70%;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    top: 0;
+    opacity: 100;
+    transition: all 0.3s ease;
+    justify-content: center;
+  }
+   
+
+
+.price-old{
+    font-size: 1.2rem;
+    color:rgb(143, 0, 0);
+    text-decoration: line-through;
+    
+}
+
+.product-price2 {
+    display: flex;
+    justify-content: left;
+  }
+  .product-old-price{
+      line-height: 100%;
+      height: 100%;
+  }
+   
+
+  
+  .product-price2 span {
+    font-size: 25px;
+    font-weight: 300;
+    color: #43474D;
+    margin-top: 3px;
+    margin-right: 40px;
+    font-weight: bold;
+  }
+
+
+/* resize */
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+
